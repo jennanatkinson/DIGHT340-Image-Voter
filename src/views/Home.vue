@@ -1,6 +1,11 @@
 <template>
   <div class="home">
-    <ImageGrid :imageList="this.$root.$data.imageList"/>
+    <div class="header">
+      <h1>Image Voter</h1>
+    </div>
+    <div class="content">
+      <ImageGrid :imageList="this.$root.$data.imageList"/>
+    </div>
   </div>
 </template>
 
@@ -15,3 +20,16 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.header {
+  width: inherit;
+  padding: 20px 0px;
+  height: 100px;
+  background-color: #0C4FB3;
+  color: white;
+}
+.content {
+  margin: 20px 100px 100px 100px;
+}
+</style>
