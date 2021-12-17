@@ -1,18 +1,17 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ImageGrid :imageList="this.$root.$data.imageList"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import ImageGrid from '@/components/ImageGrid.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    ImageGrid
   }
 }
 </script>
